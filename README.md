@@ -1,6 +1,6 @@
 # BrickZone
 
-    BrickZone is a simple frameork for games like Breakout for the BMax language.
+    BrickZone is a simple framework for games like Breakout for the BMax language.
     A Leveleditor is also included.
 
 <img src = docs/game.jpg width = "45%"></img>
