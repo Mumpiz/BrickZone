@@ -32,9 +32,9 @@ Graphics GWIDTH, GHEIGHT
 SetBlend(ALPHABLEND)
 
 
-TLevel.CreateTemplateLevel("levels/template.lev")
+TLevel.CreateTemplateLevel("assets/levels/template.lev")
 
-Local level:TLevel = TLevel.LoadLevel("levels/template.lev")
+Local level:TLevel = TLevel.LoadLevel("assets/levels/template.lev")
 
 
 Repeat

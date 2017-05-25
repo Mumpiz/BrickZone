@@ -22,15 +22,15 @@ Type TGame
 
 	Method OnCreate()
 		' Sounds
-		SndBrickHit = LoadSound("sounds/brickhit.wav")
-		SndPaddleHit = LoadSound("sounds/paddlehit.wav")
+		SndBrickHit = LoadSound("assets/sounds/brickhit.wav")
+		SndPaddleHit = LoadSound("assets/sounds/paddlehit.wav")
 		' Images
-		ImgPaddle = LoadImage("images/paddle.png")
-		ImgBall = LoadImage("images/ball.png")
+		ImgPaddle = LoadImage("assets/images/paddle.png")
+		ImgBall = LoadImage("assets/images/ball.png")
 		
 		' Create the Paddle
 		Paddle = TPaddle.Create( GWIDTH / 2, GHEIGHT - 50, ImgPaddle )
-		Level = TLevel.LoadLevel("levels/test2.lev")
+		Level = TLevel.LoadLevel("assets/levels/test2.lev")
 		
 		Balls.AddLast(TBall.Create(ImgBall, GWIDTH / 2, GHEIGHT / 2))
 		

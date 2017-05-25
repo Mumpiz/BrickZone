@@ -35,9 +35,9 @@ Type TLevel
 	Function CreateTemplateLevel(file:String)
 		Local fileOut:TStream = WriteFile(file)
 		If fileOut
-			WriteLine(fileOut, "levels/Backgroundimage.png")
-			WriteLine(fileOut, "levels/Backgroundmusic.ogg")
-			WriteLine(fileOut, "levels/Bricks.png")
+			WriteLine(fileOut, "assets/levels/Backgroundimage.png")
+			WriteLine(fileOut, "assets/levels/Backgroundmusic.ogg")
+			WriteLine(fileOut, "assets/levels/Bricks.png")
 			For Local y:Int = 0 To Height - 1
 				For Local x:Int = 0 To Width - 1
 					WriteLine(fileOut, 0)
@@ -163,7 +163,7 @@ Type TLevel
 			Local curDate:String = CurrentDate()
 			curTime = Replace(curTime, ":", "_")
 			curDate = Replace(curDate, " ", "_")
-			SaveLevel("levels/NEW_LEVEL_" + curTime + "_" + curDate + ".lev")
+			SaveLevel("assets/levels/NEW_LEVEL_" + curTime + "_" + curDate + ".lev")
 		End If
 		' Turn Grid On/Off when key "G" was hit
 		If KeyHit(KEY_G)
